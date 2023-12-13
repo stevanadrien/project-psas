@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css" />
+    <style>
+      body {
+        background-image: url("bg.jpeg");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="all-planets.jpg" alt="option 1" id="planets" />
+      <img src="music.png" id="music" />
+      <img src="me.png" alt="opt 2" id="about" />
+      <img src="boxing.png" alt="a forest" id="boxing" />
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var image = document.getElementById("planets");
+        image.addEventListener("click", function () {
+          window.location.href = "./planets.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var image = document.getElementById("boxing");
+        image.addEventListener("click", function () {
+          window.location.href = "./boxing.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var image = document.getElementById("music");
+        image.addEventListener("click", function () {
+          window.location.href = "./music.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var image = document.getElementById("about");
+        image.addEventListener("click", function () {
+          window.location.href = "./aboutme.html";
+        });
+      });
+    </script>
+  </body>
+</html>

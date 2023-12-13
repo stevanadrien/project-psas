@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lora:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mars-body bg-black">
+    <nav class="bg-black border-gray-200 dark:bg-gray-950 w-full" id="navbar-planet">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Syzo</span>
+        </a>
+        <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <img class="w-8 h-8 rounded-full" src="../../jupiter.png" alt="user photo" />
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-9500 md:dark:bg-gray-950 dark:border-gray-950">
+            <li>
+              <a href="../../index.html" class="py-2 px-3 text-white rounded md:text-blue-700 md:p-0 md:dark:text-blue-500 bg-gray-950" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a
+                href="../../planets.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 bg-gray-950"
+                >Planets</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../boxing.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 bg-gray-950"
+                >Boxing</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../../music.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 bg-gray-950"
+                >Music</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-all flex flex-row">
+      <div class="kosong w-3/12 h-screen"></div>
+      <div class="neptune-desc-container w-2/6 bg-red-950 h-[100vh] flex flex-col items-center justify-center text-justify border-x-2 border-slate-100 border-opacity-10">
+        <h1 class="uranus text-white text-[80px] max-md:text-[40px] max-sm:text-[30px] font-extralight">Mars</h1>
+        <p class="text-white text-sm p-4 mb-20">
+          Mars, often referred to as the "Red Planet," stands as Earth's neighboring world and a subject of fascination for planetary exploration. While smaller and colder than Earth, Mars shares similarities, such as a day-night cycle and
+          a tilt on its axis that gives rise to seasons. Despite its apparent barrenness, Mars has a captivating history etched onto its surface. The Martian landscape is sculpted by ancient river valleys, vast deserts, and towering
+          volcanoes. Olympus Mons, the largest volcano in the solar system, stands as a testament to Mars' geological past. Valles Marineris, a system of canyons, rivals the Grand Canyon on Earth in scale, offering insights into the
+          planet's dynamic evolution.
+        </p>
+      </div>
+      <div class="image-neptune w-[600px] h-screen flex items-center justify-end">
+        <img src="mars.png" class="w-[400px] h-[700px] ml-120" alt="" />
+      </div>
+    </div>
+    <div class="fixed-info bg-red-00 h-24 w-9/12 flex flex-row">
+      <div class="left w-1/3 h-full bg-green-00 flex flex-col text-center">
+        <h1 class="title-info text-sm mb-2 text-white">ATMOSPHERE</h1>
+        <p class="text-xs px-10 text-white opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit officiis.</p>
+      </div>
+      <div class="mid w-1/3 h-full bg-blue-00 flex flex-col text-center">
+        <h1 class="title-info text-sm mb-2 text-white">CLIMATE</h1>
+        <p class="text-xs px-10 text-white opacity-60">Characterized by cold temperatures, occasional dust storms, and polar ice caps.</p>
+      </div>
+      <div class="right w-1/3 h-full bg-yellow-00 flex flex-col text-center">
+        <h1 class="title-info text-sm mb-2 text-white">PHYSICAL</h1>
+        <p class="text-xs px-10 text-white opacity-60">Mars features vast deserts, towering volcanoes such as Olympus Mons, and a massive canyon system known as Valles Marineris.</p>
+      </div>
+    </div>
+  </body>
+</html>

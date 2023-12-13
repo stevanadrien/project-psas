@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/addf194501.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .right-music {
+        background-color: #121310;
+      }
+      .music-nav-container {
+        background-color: #070706;
+      }
+      .right-player {
+        background-color: #070706;
+      }
+      .left-player {
+        background-color: #070706;
+      }
+    </style>
+  </head>
+  <body class="text-white flex flex-row m-0 p-0 max-w-full">
+    <div class="left-music w-7/12 bg-red-400 flex flex-col object-cover h-screen">
+      <img src="./major.jpg" class="object-cover h-screen" alt="" />
+    </div>
+    <div class="right-music w-full flex flex-col">
+      <div class="music-nav-container flex flex-row items-center h-16 border-b-2 border-neutral-800 gap-10">
+        <i class="fa-solid fa-bars ml-5 text-lg" style="color: #ffffff"></i>
+        <a href="../../index.html" class="font-semibold">HOME</a>
+        <a href="../../music.html" class="font-semibold">MUSIC</a>
+        <a href="../../planets.html" class="font-semibold">PLANETS</a>
+        <a href="../../boxing.html" class="font-semibold">BOXING</a>
+        <a href="" class="ml-auto mr-5">
+          <img src="../../jupiter.png" class="w-10 h-10 rounded-full" alt="" />
+        </a>
+      </div>
+      <div class="artist-name-container justify-center flex">
+        <h1 class="text-[60px] max-lg:text-[50px] font-bold">BRUNO MARS</h1>
+      </div>
+      <div class="menu-music flex flex-row gap-20 ml-12 mt-5">
+        <a href="./major.html ">SONGS</a>
+        <a href="./major-bio.html" class="font-bold border-b-2 border-green-500">BIOGRAPHY</a>
+      </div>
+      <div class="songs-title flex flex-col justify-center h-24 mt-10 ml-12 mx-10 gap-1">
+        <p class="text-sm mt-2">
+          Britain's Bruno Major splices classic singer/songwriter confessionals with sleek modern electronic production, girding the entire enterprise with hints of soul. After building an audience in the mid-2010s with a song-a-month
+          series, he earned international attention with his debut album and its 2020 follow-up, To Let a Good Thing Die. A new single, "We Were Never Really Friends," appeared in 2023. Live Based in Camden, London, Major was trained as a
+          classical guitarist and released a live EP -- appropriately called Live EP -- in 2014, but he first received attention in 2016 when he set out to release a new song every month for a full year, a project that would extend into
+          2017 and culminate in the arrival of the full-length A Song for Every Moon. He accompanied this steady stream of digital singles with regular live appearances in London, sometimes opening for Lianne La Havas.
+        </p>
+      </div>
+      <!-- CARD 1 -->
+      <div class="player-container flex flex-row w-full h-60 mt-auto">
+        <div class="left-player flex flex-col w-56">
+          <img src="./themost.jpeg" class="w-full h-30" alt="" />
+          <div class="control-panel flex flex-row justify-center w-full h-full gap-5">
+            <button onclick="playAudio()">
+              <i class="fa-solid fa-play text-xl"></i>
+            </button>
+            <button onclick="pauseAudio()">
+              <i class="fa-solid fa-pause text-xl" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </div>
+        <div class="right-player w-full h-32 mt-auto items-center flex flex-col">
+          <a href="" class="font-semibold text-lg mt-auto">The Most Beautiful Thing</a>
+          <a href="" class="font-semibold text-md">Bruno Major</a>
+          <div class="spectrum flex flex-row mb-1">
+            <p class="mt-auto text-sm mr-2">0:00</p>
+            <img src="../lany/spectrum.png" class="h-14 w-96" alt="" />
+            <p class="mt-auto text-sm ml-1">02:30</p>
+          </div>
+        </div>
+      </div>
+      <audio id="music">
+        <source src="most-music.mp3#t=00:02:00" type="audio/mpeg" />
+      </audio>
+      <!-- END OF CARD 1 -->
+    </div>
+    <script>
+      var x = document.getElementById("music");
+
+      function playAudio() {
+        x.play();
+      }
+
+      function pauseAudio() {
+        x.pause();
+      }
+    </script>
+  </body>
+</html>

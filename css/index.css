@@ -1,0 +1,63 @@
+.discover {
+  font-family: "Lora", serif;
+}
+.nav-container {
+  position: fixed;
+}
+#navbar-planet {
+  position: fixed;
+}
+.index-body {
+  background-image: url("../stars.jpg");
+}
+.saturn-body {
+  background-image: url("../../desc/saturn/saturn-bg.png");
+  object-fit: cover;
+}
+.mercury-body {
+  background-image: url("../../desc/mercury/mercury-bg.png");
+  object-fit: cover;
+}
+.venus-body {
+  background-image: url("../../desc/venus/venus-bg.png");
+  background-size: cover;
+}
+.earth-body {
+  background-image: url("../../desc/earth/earth-bg.png");
+}
+.mars-body {
+  background-image: url("../../desc/mars/mars-bg.png");
+}
+.uranus-body {
+  background-image: url("../../desc/uranus/uranus-bg.png");
+  background-size: cover;
+}
+.sun {
+  width: 320px;
+  height: 320px;
+}
+#planets:hover {
+  transform: scale(1.5);
+}
+.uranus {
+  font-family: serif;
+  font-weight: light;
+}
+.neptune-desc-container {
+  background-image: linear-gradient(180deg, black, #141414);
+}
+.neptune-body {
+  background-image: url("../desc/neptune/neptune-bg.png");
+  object-fit: cover;
+}
+.fixed-info {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.title-info {
+  font-family: "Josefin Sans", sans-serif;
+}
+.jupiter-body {
+  background-image: url("../desc/jupiter/jupiter-bg.png");
+}
